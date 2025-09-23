@@ -105,8 +105,8 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* ✅ LogoLoop section starts here */}
-      <div style={{ height: "200px", position: "relative", overflow: "hidden" }}>
+            {/* ✅ LogoLoop section starts here */}
+      <div className="w-full bg-black py-6">
         <LogoLoop
           logos={[
             { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -124,8 +124,7 @@ const AboutSection = () => {
             { node: <SiPostgresql />, title: "PostgreSQL", href: "https://www.postgresql.org" },
             { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
             { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
-            ]}
-
+          ]}
           speed={120}
           direction="left"
           logoHeight={48}
@@ -133,11 +132,12 @@ const AboutSection = () => {
           pauseOnHover
           scaleOnHover
           fadeOut
-          fadeOutColor="#ffffff"
+          fadeOutColor="#000000"
           ariaLabel="Technology partners"
         />
       </div>
       {/* ✅ LogoLoop section ends here */}
+
     </section>
   );
 };

@@ -17,7 +17,7 @@ const HeroSection = () => {
                     className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                     >
                         <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                           <span className="text-[#F70670]">
                                 Hello, I'm {" "}
 
                             </span>
@@ -28,30 +28,38 @@ const HeroSection = () => {
                                     // Same substring at the start will only be typed out once, initially
                                     "Sithika",
                                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                    "Web Developer",
+                                    "a Web Developer",
                                     1000,
                                     "Graphic Designer",
                                     1000,
-                                    "UI/UX Designer" ,
+                                    "a UI/UX Designer" ,
                                     1000
                                     
                                 ]}
                                 wrapper="span"
                                 speed={50}
                                 repeat={Infinity}
+                                className="inline-block ml-0.5" 
                             />
                         </h1>
-                        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" >
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolore, a explicabo fuga consequuntur repudiandae hic quia quo laboriosam. Fugit dignissimos molestias error officiis sequi esse repellendus laudantium nostrum tempora.
+                        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                        Hi, I’m Sithika, an undergraduate at the University of Kelaniya based in Colombo. 
+                        My work spans UX design, UI animations, graphic design, and logo illustration, 
+                        where I blend creativity with functionality. With a strong comfort in coding.
+                        <br /> 
+                        I can quickly prototype and validate ideas, turning concepts into polished digital experiences.
                         </p>
+
+
                         <div>
                            <button
-                              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white shiny-text"
+                              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 text-[#F70670] hover:bg-slate-200 shiny-text"
+
                             >
                              Hire me
                             </button>
 
-                            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3" >
+                            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-[#F70670] hover:bg-slate-800 text-white mt-3" >
                                  <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                             </button>
 
@@ -65,7 +73,7 @@ const HeroSection = () => {
                     <div className=" rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
 
                         <Image
-                                src="/images/coverbg.png"
+                                src="/images/coverbg1.png"
                                 alt="hero"
                                 className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 width={300}
