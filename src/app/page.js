@@ -6,6 +6,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import Timeline from "./components/Timeline";
+import TimelineNew from "./components/TimelineNew";
 
 
 
@@ -17,7 +18,8 @@ export default function Home() {
       <HeroSection />
       <AchievementsSection />
       <AboutSection/>
-      <Timeline/> 
+      {/* <Timeline/>  */}
+      <TimelineNew/> 
       <ProjectsSection/>
       <EmailSection />
      </div>

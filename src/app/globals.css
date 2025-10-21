@@ -311,7 +311,7 @@ html {
   padding: 1.5rem;
   background: linear-gradient(
     135deg,
-    rgba(247, 6, 112, 0.55), /* brighter pink */
+    rgb(243, 84, 163), /* brighter pink */
     rgb(255, 0, 128)
   );
   backdrop-filter: blur(20px);
