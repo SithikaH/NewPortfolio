@@ -1,10 +1,15 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import SpotlightCard from "./SpotlightCard";
 
 const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl}) => {
   return (
     <div>
+        <SpotlightCard
+        className="custom-spotlight-card"
+        spotlightColor="rgba(247, 6, 160, 0.4)"
+      >
         <div className="h-52 md:h-72 rounded-t-xl relative group"
          style={{background: `url(${imgUrl})`, backgroundSize: "cover"}}>
 
@@ -29,6 +34,8 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl}) => {
             <p className="text-[#ADB7BE]">{description}</p>
 
         </div>
+    
+     </SpotlightCard>
 
     </div>
   );
